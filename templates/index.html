@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Input Form</title>
+  </head>
+  <body>
+    <h1>Input Form</h1>
+    <form method="POST" action="{{ url_for('process_input') }}">
+        <label for="input">Enter your input:</label>
+        <select name="status">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <label for="input">duration:</label>
+        <select name="duration">
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+        </select>
+      <label for="input">Enter your input:</label>
+      <input type="text" name="input" id="input">
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
